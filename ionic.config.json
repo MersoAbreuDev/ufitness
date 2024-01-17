@@ -1,0 +1,7 @@
+{
+  "name": "ufitness",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
