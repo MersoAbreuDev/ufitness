@@ -1,0 +1,137 @@
+.ion-page ion-header ion-toolbar{
+    --background: #202020;
+    padding: 8px 0;
+    --border-width: 0;
+}
+
+ion-header{
+    box-shadow: none;
+}
+
+ion-menu-button{
+    color: #fff;
+    font-size: 40px;
+}
+
+ion-title{
+    text-align: center;
+}
+
+ion-title img{
+    margin-top: 10px;
+    width: 110px;
+}
+
+ion-menu{
+    --background: #202020;
+}
+
+ion-content{
+    --background: #202020;
+}
+
+.notifications{
+    padding: 0 15px;
+}
+
+.notifications .notifications-rounded{
+    width: 38px;
+    height: 38px;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #FF9300;
+    position: relative;
+}
+
+.notifications .notifications-rounded .pin{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #7AF3D2;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    transform: scale(0.8);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+/*
+    MENU
+*/
+
+.user-content{
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+
+.user-content .content-avatar{
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-box-shadow: -2px 3px 18px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 3px 18px -2px rgba(0,0,0,0.75);
+    box-shadow: -2px 3px 18px -2px rgba(0,0,0,0.75);
+    margin-bottom: 10px;
+}
+
+.user-content .content-avatar img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.user-content .content-info h2{
+    margin: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.user-content .content-info p{
+    margin: 0;
+    font-size: 16px;
+    color: #563C9D;
+}
+
+.menu-list ul{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list ul li{
+    display: block;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    font-weight: 300;
+}
+
+.menu-list ul li ion-icon{
+    font-size: 20px;
+    margin-right: 8px;
+}
+

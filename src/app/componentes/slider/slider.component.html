@@ -1,0 +1,36 @@
+<div class="slider">
+  <div class="slider-content">
+    <div class="content ion-padding">
+      <app-custom-title title="NOVO PERSONAL" [type]=1></app-custom-title>
+      <div class="content-slider">
+        <swiper-container slides-per-view="1.5">
+          <swiper-slide *ngFor="let item of carouselItemPersonal">
+              <ion-grid>
+                <ion-row> 
+                  <ion-col>
+                    <app-custom-card-personal alt="{{ item.alt }}" url="{{ item.url }}"></app-custom-card-personal>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </div>
+    <div class="content ion-padding">
+      <app-custom-title title="PROGRAMAS" [type]=2></app-custom-title>
+      <div class="content-slider">
+        <swiper-container slides-per-view="1.5">
+          <swiper-slide *ngFor="let item of carouselItemPrograms">
+              <ion-grid>
+                <ion-row> 
+                  <ion-col>
+                    <app-custom-card-programs alt="{{ item.alt }}" url="{{ item.url }}" text="{{ item.text }}"></app-custom-card-programs>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </div>
+  </div>
+</div>

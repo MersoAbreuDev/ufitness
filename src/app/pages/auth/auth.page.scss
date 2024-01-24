@@ -1,0 +1,46 @@
+.validators {
+    color: #fff;
+    font-size: 13px;
+    padding: 0 30px;
+    margin-bottom: 15px;
+}
+
+ion-content{
+    --background: #202020;
+}
+
+.auth-form{
+    padding: 0 30px;
+}
+
+ion-button{
+    --border-radius: 6px;
+    color: #fff;
+    --background: #FF9300;
+    text-transform: uppercase;
+}
+
+.singup{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.singup span{
+    color: #FF9300;
+    font-weight: 400;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 185px;
+    height: auto;
+}
+
+.login{
+    margin-top: 35%;
+}

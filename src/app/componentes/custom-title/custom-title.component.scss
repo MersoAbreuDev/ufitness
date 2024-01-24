@@ -1,0 +1,30 @@
+.content-title h2{
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.content-title ion-icon{
+    display: inline-block;
+    vertical-align: middle;
+    color: #FF9300;
+    font-size: 14px;
+    padding: 2px;
+    border: 1px solid #FF9300;
+    border-radius: 50%;
+}
+
+.content-title span{
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 300;
+    padding: 1px 5px;
+    background-color: #FF9300;
+    border-radius: 12px;
+}

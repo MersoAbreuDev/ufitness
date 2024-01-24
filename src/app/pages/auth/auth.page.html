@@ -1,0 +1,27 @@
+<ion-content>
+    <div class="login d-flex-center">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+      <form [formGroup]="form" (ngSubmit)="submit()" class="auth-form">
+        <app-custom-input
+         type="email"
+         autoComplete="email"
+         placeholder="E-mail"
+         [control]="form.controls.email"
+         icon="mail-outline"></app-custom-input>
+        <app-custom-input
+         type="password"
+         icon="lock-closed-outline"
+         autoComplete="senha"
+         [control]="form.controls.password"
+         placeholder="Senha"
+         ></app-custom-input>
+        <ion-button expand="block" class="submit" mode="ios" type="submit" [disabled]="form.invalid">
+          Login
+        </ion-button>
+        <p class="ion-text-center singup">Ainda não tem uma conta? <span [routerLink]="['/forgot-password']">Criar conta</span></p>
+      </form>
+    </div>
+   
+</ion-content>

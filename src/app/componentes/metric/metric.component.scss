@@ -1,0 +1,53 @@
+
+
+.content-left{
+    width: 45%;
+    float: left;
+    text-align: left;
+}
+
+.content-left ion-icon{
+    color: #FF9300;
+    font-size: 14px;
+    padding: 4px;
+    border: 1px solid #FF9300;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.content-left p{
+    display: inline-block;
+    vertical-align: middle;
+    color: #FF9300;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.content-right{
+    width: 55%;
+    float: left;
+    text-align: left;
+}
+
+.content-right ion-icon{
+    color: #FF9300;
+    font-size: 14px;
+    padding: 4px;
+    border: 1px solid #FF9300;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.content-right p{
+    display: inline-block;
+    vertical-align: middle;
+    color: #FF9300;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
