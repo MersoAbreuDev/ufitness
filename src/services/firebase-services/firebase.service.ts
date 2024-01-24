@@ -1,6 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import {AngularFireAuth} from '@angular/fire/compat/auth';
 import {getAuth, signInWithEmailAndPassword} from 'firebase/auth';
+import { Observable } from 'rxjs';
 import { User } from 'src/app/models/user';
 
 @Injectable({
@@ -8,10 +9,17 @@ import { User } from 'src/app/models/user';
 })
 export class FirebaseService {
   auth = inject(AngularFireAuth); 
+  user$: Observable<firebase.default.User | null>;
 
-  //======================Autenticação===============================
+  constructor(private afAuth: AngularFireAuth) {
+    this.user$ = afAuth.authState;
+  }
+
+  signOut() {
+    return this.afAuth.signOut();
+  }
 
   signin(user:User){
-   return signInWithEmailAndPassword(getAuth(), user.email, user.password)
+   return this.afAuth.signInWithEmailAndPassword(user.email, user.password);
   }
 }
